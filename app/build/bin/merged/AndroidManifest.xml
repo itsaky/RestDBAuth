@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itsaky.auth"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.itsaky.auth.AIDEApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Login"
+        android:resizeableActivity="true"
+        android:theme="@style/MyTheme" >
+        <activity
+            android:name="com.itsaky.auth.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.itsaky.auth.DebugActivity" />
+        <activity
+            android:name="com.itsaky.auth.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.itsaky.auth.SignupActivity"
+            android:label="Sign Up"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
